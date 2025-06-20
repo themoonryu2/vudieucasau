@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Web Truyện Tu Tiên</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:sans-serif;background:#f5f5f5;color:#333;line-height:1.6}
+    .container{max-width:900px;margin:2rem auto;padding:0 1rem}
+    h1{text-align:center;margin-bottom:1rem}
+    select{width:100%;padding:.5rem;margin:1rem 0;border:1px solid #ccc;border-radius:.25rem;font-size:1rem}
+    img.cover{width:100%;border-radius:.5rem;object-fit:cover;margin-bottom:1rem}
+    #story{background:#fff;padding:1.5rem;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);margin-bottom:2rem}
+    #story h2{font-size:1.5rem;margin-bottom:1rem}
+    #story-content p{margin-bottom:1rem}
+    #quotes{background:#3366ff;color:#fff;padding:1.5rem;border-radius:.5rem;margin-bottom:2rem}
+    .quote{margin-bottom:1rem;font-style:italic}
+    .author{text-align:right;font-weight:bold}
+  </style>
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@2.4.0/dist/purify.min.js"></script>
+  <script type="module" defer src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Web Truyện Tu Tiên Ma Mị</h1>
+    <select id="story-select"></select>
+    <img id="story-cover" class="cover" alt="Cover truyện" loading="lazy">
+
+    <div id="story">
+      <h2 id="chapter-title">Chọn truyện và chương…</h2>
+      <div id="story-content"></div>
+      <select id="chapter-select"></select>
+    </div>
+
+    <div id="quotes">
+      <div class="quote">“Thiên địa vô tình, tu tiên hữu tình.”<div class="author">— Cổ Kim</div></div>
+      <div class="quote">“Lòng người như nước, lúc yên lặng, lúc cuộn sóng.”<div class="author">— Ẩn Cảnh</div></div>
+      <div class="quote">“Anh hùng hào kiệt, giang hồ chỉ là trò chơi phù du.”<div class="author">— Giang Sơn</div></div>
+    </div>
+  </div>
+</body>
+</html>
